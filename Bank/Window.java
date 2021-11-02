@@ -11,36 +11,72 @@ public class Window {
      * windowsCount - amount of opened window's
      * timetable - get understanding of the time.
      */
-    String param;
-    int V;
-    int windowsCount = 5;
-    String timetable = "before dinner";
-    public Window (String p) {
+    private String param;
+    private int V;
+    private int windowsCount = 5;
+    private String timetable = "before dinner";
+
+    public Window(String p) {
         param = p;
     }
 
     /**
      * Setter for timetable
+     *
      * @param t Get's ONLY VALUES "before dinner" or "after dinner".
      * @return new timetable
      */
-    public String setTimetable (String t) {
-        timetable = t;
+    public void setTimetable(String t) {
+        this.timetable = t;
+    }
+
+    public String getTimetable () {
         return timetable;
     }
 
     /**
      * Calling client to a window
      */
-    public void call () {}
+    public void call() {
+    }
 
     /**
-     * V GETTER
-     * @return V
+     * getter for param
+     *
+     * @return new param
+     */
+
+    public String getParam() {
+        return param;
+    }
+
+    /**
+     * Setter for param
+     *
+     * @param str new value for it
+     * @return new param with new value
+     */
+    public void setParam(String str) {
+        this.param = str;
+    }
+
+    /**
+     * getter for V
+     * @return new V value
      */
     public int getV () {
-        return V;
+        return this.V;
     }
+
+    /**
+     * setter for V
+     * @param value new value for V
+     */
+    public void setV (int value) {
+        this.V = value;
+    }
+
+
 
     /**
      * WINDOWS COUNT GETTER
@@ -51,19 +87,11 @@ public class Window {
     }
 
     /**
-     * Getter for timetable
-     * @return timetable
+     * setter for windows count
+     * @param count new amount of windows
      */
-    public String getTimetable () {
-        return timetable;
-    }
-
-    /**
-     * getter for param
-     * @return param
-     */
-    public String getParam () {
-        return param;
+    public void setWindowsCount (int count) {
+        this.windowsCount = count;
     }
 
 }
