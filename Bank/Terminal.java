@@ -8,9 +8,9 @@ import java.util.Date;
  */
 
 public class Terminal {
-    int numb;
-    Date date;
-    String purpose;
+    private int numb;
+    private Date date;
+    private String purpose;
 
     /**
      * Get purpose
@@ -20,6 +20,30 @@ public class Terminal {
         numb++;
         purpose = p;
     }
+
+    public void setNumb(int value) {
+        this.numb = value;
+    }
+    public int getNumb () {
+        return numb;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setPurpose(String purpose) {
+        this.purpose = purpose;
+    }
+
+    public String getPurpose() {
+        return purpose;
+    }
+
     /**
      * Accepting client
      * @return SomeValue
