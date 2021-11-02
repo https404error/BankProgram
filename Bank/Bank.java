@@ -33,9 +33,9 @@ public class Bank {
         for (Window w: allWindows) {
             // Write here: w.setTimetable("after dinner"); if you want to change TT.
 //            System.out.println(w.getParam());
-            if (w.timetable.equals("after dinner")) {
+            if (w.getTimetable().equals("after dinner")) {
                 after_dinner = true;
-                w.param = "получение документов";
+                w.setParam("получение документов");
             }
         }
         if (after_dinner) {
@@ -65,12 +65,12 @@ public class Bank {
         int usersCount = 0;
         for (Terminal user : allUsers) {
             usersCount++;
-            if (wnd.timetable.equals("after dinner") && !(user.purpose.equals("получение документов"))) {
+            if (wnd.getTimetable().equals("after dinner") && !(user.getPurpose().equals("получение документов"))) {
                 info.show(user, wnd.getParam(), usersCount);
                 user.deny();
             }
             for (Window w : allWindows) {
-                if (user.purpose.equals(w.getParam())) {
+                if (user.getPurpose().equals(w.getParam())) {
                     info.show(user, w.getParam(), usersCount);
                 }
             }
