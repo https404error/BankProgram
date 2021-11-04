@@ -5,10 +5,11 @@ package NewBank;
  */
 
 public class InformationTable {
+    private String [] allUSers;
     /**
      * Printing all users;
      */
-    public void printAllUsers () {}
+    public void printAllUsers (String [] users) {}
 
     /**
      * Gets time of working with 1 person
