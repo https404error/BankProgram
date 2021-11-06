@@ -13,5 +13,7 @@ public class Window {
     /**
      * Starts work with client
      */
-    public void startWork () {}
+    public void startWork() {}
+    
+    public void breakForDinner() {}
 }
