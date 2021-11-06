@@ -6,6 +6,7 @@ package NewBank;
  */
 
 public class BankSystem {
+    private int status;
     /**
      * Check in DataBase
      * @return true, if ok, false, if not
@@ -25,4 +26,6 @@ public class BankSystem {
      * @return ok or not
      */
     public int getIdentity () {return 1;}
+    
+    public void sendAnswerToTerminal() {}
 }
